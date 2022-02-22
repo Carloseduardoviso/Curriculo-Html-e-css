@@ -1,0 +1,199 @@
+section.module.content .Hab {
+    margin: 10px;
+    position: relative;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4),
+    inset -1px -1px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #FFFAFA;
+    box-shadow: 0 0 20px #FFFAFA;
+}
+
+section.module.content .Hab h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color:  white;
+    text-shadow: 0 0 20px white;
+    
+}
+
+section.module.content .Hab .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 10px 0;
+    padding-right: 10px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4),
+    inset -1px -1px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    border: 2px solid #FFFAFA;
+    box-shadow: 0 0 20px #FFFAFA;
+}
+
+section.module.content .Hab .skills h5 {
+    min-width: 120px;
+    text-align: right;
+    color: white;
+    text-shadow: 0 0 10px #696969;;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+section.module.content .Hab .skills .rating {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row-reverse;
+    width: 250px;
+}
+
+section.module.content .Hab .skills .rating input {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+section.module.content .Hab .skills .rating input::before {
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 34px;
+    position: absolute;
+    left: 4px;
+    color: #008B8B;
+    text-shadow: 0 0 10px #008B8B;
+    transition: 0.5;
+}
+
+section.module.content .Hab .skills .rating input:nth-child(2n+1)::before {
+    right: 4px;
+    left: initial;
+    
+}
+
+section.module.content .Hab .skills .rating input:hover ~ input::before, section.module.content .Hab .skills .rating input:hover::before,section.module.content .Hab .skills .rating input:checked ~ input::before, section.module.content .Hab .skills .rating input:checked::before {
+    color: #fffb1f;
+}
+
+@media only screen and (max-width: 900px) {
+    section.module.content.hab {
+        display: block;
+    }
+
+    section.module.content .Hab {
+        margin: 10px;
+        position: relative;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        8px 30px 30px rgba(0, 0, 0, 0.4),
+        inset -1px -1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    section.module.content .Hab h4 {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #14fff1;
+        text-shadow: 0 0 20px #14fff1;
+    }
+
+    section.module.content .Hab .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        margin: 10px 0;
+        padding-right: 10px;
+        box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        8px 30px 30px rgba(0, 0, 0, 0.4),
+        inset -1px -1px 5px rgba(0, 0, 0, 0.3);
+        transition: 0.5s;
+    }
+    
+    section.module.content .Hab:hover .skills {
+        filter: blur(5px);
+        opacity: 0.2;
+    }
+    
+    section.module.content .Hab .skills:hover {
+        filter: blur(0px);
+        opacity: 1;
+    }
+    
+    
+    section.module.content .Hab .skills h5 {
+        min-width: 120px;
+        text-align: right;
+        color: #14fff1;
+        text-shadow: 0 0 10px #14fff1;;
+        padding-right: 10px;
+        font-size: 9px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    
+    section.module.content .Hab .skills .rating {
+        position: relative;
+        display: flex;
+        margin: 10px 0;
+        flex-direction: row-reverse;
+        width: 250px;
+    }
+    
+    section.module.content .Hab .skills .rating input {
+        position: relative;
+        width: 20px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-appearance: none;
+        appearance: none;
+        overflow: hidden;
+    }
+    
+    section.module.content .Hab .skills .rating input::before {
+        content: '\f005';
+        position: absolute;
+        font-family: fontAwesome;
+        font-size: 34px;
+        position: absolute;
+        left: 4px;
+        color: #14fff1;
+        text-shadow: 0 0 10px #14fff1;
+        transition: 0.5;
+    }
+
+    section.module.content .Hab .skills .rating input:nth-child(2n+1)::before {
+        right: 4px;
+        left: initial;
+        
+    }
+    section.module.content .Hab .skills .rating input:hover ~ input::before, section.module.content .Hab .skills .rating input:hover::before,section.module.content .Hab .skills .rating input:checked ~ input::before, section.module.content .Hab .skills .rating input:checked::before {
+        color: #fffb1f;
+    }
+}
+    

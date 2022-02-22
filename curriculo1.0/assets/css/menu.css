@@ -1,0 +1,56 @@
+section.module.parallax .menu{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #FFFAFA;
+    box-shadow: 0 0 20px #FFFAFA;
+}
+
+section.module.parallax .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    z-index: 10px;
+}
+
+section.module.parallax .menu ion-icon {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+section.module.parallax .menu a h4 {
+    padding: 20px;
+}
+
+section.module.parallax .menu a h4:hover {
+    background: white;
+    color: black;
+    border-radius: 30px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    section.module.parallax .menu ion-icon {
+        font-size: 20px;
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+        opacity: 0;
+    }
+    
+    section.module.parallax .menu a h4 {
+        padding: 10px;
+    }
+
+    section.module.parallax .menu a h4:hover {
+    background: none;
+    color: white;
+    }
+}
